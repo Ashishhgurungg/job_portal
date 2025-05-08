@@ -1,0 +1,110 @@
+/* Main container styling */
+.reviews-container {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Session message styling */
+.session-message {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+
+.session-message.success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.session-message.error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+/* Review item styling */
+.review-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-sender {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.review-sender span {
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Status select styling */
+select#status {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    color: #374151;
+    margin-right: 1rem;
+}
+
+/* View review link styling */
+.view-review-link {
+    display: inline-block;
+    background-color: #6366f1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.view-review-link:hover {
+    background-color: #4f46e5;
+}
+
+/* Empty state styling */
+.empty-state {
+    padding: 3rem 0;
+    text-align: center;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+/* Pagination styling */
+.pagination {
+    margin-top: 1rem;
+}
+
+.pagination nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .review-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .view-review-link {
+        margin-top: 0.75rem;
+    }
+}

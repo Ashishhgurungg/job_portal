@@ -1,0 +1,309 @@
+/* General Page Layout */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  /* Main Content Area */
+  .py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .max-w-7xl {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .max-w-7xl {
+      padding: 0 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .max-w-7xl {
+      padding: 0 2rem;
+    }
+  }
+  
+  /* Inquiry Cards */
+  .inquiry-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .inquiry-content {
+    padding: 1.5rem;
+  }
+  
+  .inquiry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .inquiry-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .inquiry-email {
+    color: #2563eb;
+    margin: 0;
+  }
+  
+  .inquiry-message {
+    margin-top: 1rem;
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    white-space: pre-line;
+  }
+  
+  /* Delete Button */
+  .delete-button {
+    display: flex;
+    align-items: center;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .delete-button:hover {
+    background-color: #b91c1c;
+  }
+  
+  .delete-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  /* Empty State */
+  .empty-state {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .empty-state p {
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination a, .pagination span {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.25rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: #4b5563;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+  }
+  
+  .pagination a:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .pagination .active {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+  }
+  
+  /* Delete Confirmation Modal */
+  .modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .modal-content {
+    padding: 1.5rem;
+  }
+  
+  .modal-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-message {
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .btn-cancel {
+    padding: 0.5rem 1rem;
+    background-color: #e5e7eb;
+    color: #111827;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-delete {
+    padding: 0.5rem 1rem;
+    background-color: #dc2626;
+    color: white;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-delete svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.25rem;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #d1d5db;
+  }
+  
+  .btn-delete:hover {
+    background-color: #b91c1c;
+  }
+  
+  /* Access Denied Page */
+  .access-denied {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+  }
+  
+  .access-denied-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 28rem;
+    width: 100%;
+  }
+  
+  .access-denied-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc2626;
+    margin-bottom: 1rem;
+  }
+  
+  .access-denied-icon svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .access-denied-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .access-denied-message {
+    text-align: center;
+    color: #6b7280;
+  }
+  
+  .access-denied-action {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .home-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .home-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .home-button svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.5rem;
+  }

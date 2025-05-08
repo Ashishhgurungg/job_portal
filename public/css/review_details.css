@@ -1,0 +1,138 @@
+/* Review details main heading */
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Review container */
+.review-detail-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+/* Individual review styling */
+.review-item {
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem;
+    background-color: #f9fafb;
+}
+
+/* Review sender info */
+.review-sender {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.review-sender span {
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Review message content */
+.review-message {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Delete button */
+.delete-button {
+    display: inline-block;
+    background-color: #ef4444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+    background-color: #dc2626;
+}
+
+/* Status change form */
+.status-form {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    background-color: #f9fafb;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-right: 1rem;
+    color: #374151;
+}
+
+/* Status select styling */
+select#status {
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    color: #374151;
+    margin-right: 1rem;
+    min-width: 100px;
+}
+
+/* Submit button */
+.submit-button {
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #4f46e5;
+}
+
+@media (max-width: 640px) {
+    .review-detail-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .form-label {
+        margin-bottom: 0.5rem;
+    }
+    
+    select#status {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
